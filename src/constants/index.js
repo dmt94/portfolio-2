@@ -1,10 +1,7 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
+  elysium,
   html,
   css,
   reactjs,
@@ -13,15 +10,14 @@ import {
   nodejs,
   mongodb,
   git,
+  python,
   figma,
   docker,
   meta,
   starbucks,
   tesla,
   shopify,
-  carrent,
   jobit,
-  tripguide,
   threejs,
 } from "../assets";
 
@@ -43,19 +39,19 @@ export const navLinks = [
 const services = [
   {
     title: "Software Developer",
-    icon: web,
+    icon: "https://cdn-icons-png.flaticon.com/512/771/771266.png",
   },
   {
     title: "Frontend Developer",
-    icon: mobile,
+    icon: "https://cdn-icons-png.flaticon.com/512/7466/7466538.png",
   },
   {
     title: "Backend Developer",
-    icon: backend,
+    icon: "https://cdn-icons-png.flaticon.com/512/8555/8555413.png",
   },
   {
-    title: "Designer",
-    icon: creator,
+    title: "Artist",
+    icon: "https://cdn-icons-png.flaticon.com/512/9275/9275922.png",
   },
 ];
 
@@ -71,6 +67,10 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
+  },
+  {
+    name: "Python",
+    icon: python,
   },
   // {
   //   name: "TypeScript",
@@ -190,67 +190,66 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Planit Smart Task Management",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A simple task management application, where users are able to manage events/tasks by utilizing a calendar view, as well as input dates, and access their data using an AI assistant. In addition to being able to manually create, read, update, and delete personal events, the AI assistant is able to suggest events, locations, and retrieve the user's data according to user's commands.",
+    link: "https://planitask.herokuapp.com/",
     tags: [
       {
-        name: "react",
+        name: "mongodb",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "nodeJS",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "openAI",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: "https://github.com/dmt94/planit/raw/main/public/images/1.png",
+    source_code_link: "https://github.com/dmt94/planit",
+  },
+  {
+    name: "Elysium: Ecommerce Mood Board",
+    description:
+      "(In Progress) Full stack e-commerce application. Additional features include virtual mood board and image collages",
+    link: "tic-tac-toe-dmt.netlify.app/",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NodeJS",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    video: elysium,
+    source_code_link: "https://github.com/dmt94/elysium-ecommerce",
   },
   {
-    name: "Job IT",
+    name: "Space Themed Tic Tac Toe",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A fun spaced themed tic-tac-toe game with a play music option.",
+    link: "https://tic-tac-toe-dmt.netlify.app/",
     tags: [
       {
-        name: "react",
+        name: "vanilla JS",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
+        name: "html5/css3",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/dmt94/tic-tac-toe",
   },
 ];
 

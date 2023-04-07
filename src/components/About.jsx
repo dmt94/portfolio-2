@@ -22,7 +22,7 @@ const ServiceCard = ({index, title, icon}) => {
               speed: 450
               }
             }
-            className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+            className='rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
           >
             <img src={icon} alt={title} className='w-16 h-16 object-contain' />
             <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
@@ -42,9 +42,11 @@ const About = () => {
 
       <motion.p 
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-[23px] max-w-3xl leading-[30px]'
         >
-      Growth-centric, self-driven, and fundamentals-focused software developer determined to add value to a group that highlights building strong foundations, resourcefulness, and collaborative growth. My creative talents, background in psychology, and strong technical knowledge allow me to thrive, while providing support to others in any work environment. My experience in using modern frameworks allows me to provide comprehensive and meaningful solutions to issues that truly help people and businesses.
+        a growth-focused and self-driven software developer who's determined to add value to any team that shares my love for building strong foundations and collaborative growth. 
+
+        I love to design and am currently creating with pixel and 3D art during my free time! I'm excited to collaborate with you and bring our unique perspectives and skills together.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import { styles } from "../styles";   
 
 const Hero = () => {
   return (
@@ -9,7 +8,7 @@ const Hero = () => {
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
+          <div className='w-5 h-5 rounded-full bg-[#798af6]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
@@ -20,10 +19,14 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Your friendly neighborhood developer <br className='sm:block hidden' />
           </p>
+          <div className="flex flex-">
+            <a target="blank" href="https://docs.google.com/document/d/1fqbopFmwMfaLzlY9M1iQ0sRHacmVgY4hnjsT8WR5Ap0/edit?usp=sharing" className="links"> View my Resume </a>    
+            <a target="blank" href="https://www.linkedin.com/in/d-tayl/" className="links"> LinkedIn </a>    
+            <a target="blank" href="https://github.com/dmt94" className="links"> Github </a>    
+          </div>
+            
         </div>
       </div>
-
-      <ComputersCanvas />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
